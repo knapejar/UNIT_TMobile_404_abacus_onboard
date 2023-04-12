@@ -2,13 +2,13 @@ import numpy as np
 
 # read rectangles from input file
 rectangles = []
-with open('rectangles_2.txt', 'r') as f:
+with open('rectangles_y2.txt', 'r') as f:
     for line in f:
         rect = tuple(map(int, line.strip().split(',')))
         rectangles.append(rect)
 
 # create numpy array
-arr = np.zeros((300, 300), dtype=int)
+arr = np.zeros((1281, 721), dtype=int)
 
 # count rectangles for each point in array
 for rect in rectangles:
